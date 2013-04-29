@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 
 # base class
 class deathInc(object):
