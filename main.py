@@ -12,11 +12,15 @@ class deathInc(object):
 			print self._state
 		
 	def setState(self, newState):
-		self._state = newState
+		if newState == "die":
+			self._state = None
+		else:
+			self._state = newState
 		
-
 di = deathInc()
 
 di.printState()
 di.setState("reanimated")
+di.printState()
+di.setState("die")
 di.printState()
