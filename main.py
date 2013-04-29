@@ -8,9 +8,10 @@ class deathInc(object):
 	def setState(self, newState):
 		self._state = newState
 		
+if __name__ == "__main__"
 
-di = deathInc()
+	di = deathInc()
 
-di.printState()
-di.setState("reanimated")
-di.printState()
+	di.printState()
+	di.setState("reanimated")
+	di.printState()
