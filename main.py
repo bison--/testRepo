@@ -18,7 +18,7 @@ class deathInc(object):
 		else:
 			self._state = newState
 		
-if __name__ == "__main__"
+if __name__ == "__main__":
 	di = deathInc()
 
 	di.printState()
