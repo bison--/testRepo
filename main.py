@@ -2,16 +2,27 @@
 
 # base class
 class deathInc(object):
+
+	def __init__(self):
+		self._state = None
+	
 	def printState(self):
-		print "dead body class"
+		if self._state == None:
+			print "dead body class"
+		else:
+			print self._state
 		
 	def setState(self, newState):
-		self._state = newState
+		if newState == "die":
+			self._state = None
+		else:
+			self._state = newState
 		
 if __name__ == "__main__"
-
 	di = deathInc()
 
 	di.printState()
 	di.setState("reanimated")
+	di.printState()
+	di.setState("die")
 	di.printState()
