@@ -8,10 +8,10 @@ class deathInc(object):
 	
 	def printState(self):
 		if self._state == None:
-			print "dead body class"
+			print("dead body class")
 		else:
-			print self._state
-		
+			print(self._state)
+
 	def setState(self, newState):
 		if newState == "die":
 			self._state = None
