@@ -5,7 +5,7 @@ class deathInc(object):
 
 	def __init__(self):
 		self._state = None
-	
+
 	def printState(self):
 		if self._state == None:
 			print("dead body class")
@@ -17,7 +17,8 @@ class deathInc(object):
 			self._state = None
 		else:
 			self._state = newState
-		
+
+
 if __name__ == "__main__":
 	di = deathInc()
 
